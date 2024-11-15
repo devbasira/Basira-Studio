@@ -9,17 +9,17 @@ import logo from '../assets/logo.png'
 export default function PortfolioLayout() {
     return (
         <div className="grid lg:grid-cols-4 lg:w-[1288px] h-screen">
-            <div className="p-[30px] bg-white col-span-1 lg:overflow-y-auto lg:items-start items-center lg:w-[350px] w-screen  h-auto flex flex-col  justify-between">
+            <div className="p-[30px] lg:pr-[30px] pr-[60px] bg-white col-span-1 lg:overflow-y-auto lg:items-start  lg:w-[350px] w-screen  lg:h-screen flex flex-col  justify-between h-[90vh]">
                 <div className='space-y-[15px]'>
                     <h2 className="text-[24px] font-bold">"Make things easy for the people,..."</h2>
-                    <p className="mt-4 text-[16px] text-[#666666] text-sm">
+                    <p className="mt-4 font-light text-[16px] text-[#666666]">
                         At Basira Studio, we believe in the power of thoughtful design to transform everyday experiences. Our vision is to create intuitive, uplifting, and inclusive solutions that make life simpler and more joyful.
                     </p>
                 </div>
-                <div class="bg-white  max-w-lg w-full">
-                    <h4 className='text-[#666666]'>#buildingInPublic</h4>
+                <div class="bg-white   w-full">
+                    <h4 className='text-[#666666] font-extralight'>#buildingInPublic</h4>
                     <h2 class="text-[16px] font-bold text-[#2D3A8C] mb-4">
-                        We’re Still Building—Join the Process!
+                        We’re Still Building<br />—Join the Process!
                     </h2>
                     <p class="text-[#666666] font-light mb-6 text-[16px]">
                         Sign up to be part of our journey.<br /> Get updates, behind-the-scenes peeks, and early access to our launch. Let’s create something amazing together.
@@ -32,20 +32,23 @@ export default function PortfolioLayout() {
                                 class="w-full px-4 py-2 border-t border-gray-100 border-b border-b-black focus:outline-none focus:bg-gray-100 placeholder-gray-500"
                             />
                         </div> */}
-                        <div>
-                       
+                        <div className='flex justify-between'>
                             <input
                                 type="email"
                                 placeholder="Enter your Email"
-                                class="w-full px-4 py-2 border-t border-gray-100 border-b border-b-black focus:outline-none focus:bg-gray-100 placeholder-gray-500"
+                                class="w-auto h-auto px-4 py-2 border-t border-gray-100 border-b border-b-black focus:outline-none focus:bg-gray-100 placeholder-gray-500"
                             />
+                            <button
+                                type="button"
+                                class="w-[55px] h-[55px] text-white bg-[#0033A0] hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-5 text-center  items-center ">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg>
+                                <span class="sr-only">Icon description</span>
+                            </button>
                         </div>
-                        <button
-                            type="submit"
-                            class="w-full bg-black text-white py-2 px-4 rounded-full hover:bg-[#2D3A8C] focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                        >
-                            Join the Journey
-                        </button>
+
+
                     </form>
                 </div>
 
@@ -65,22 +68,22 @@ export default function PortfolioLayout() {
                     <div className="relative">
                         <ImageBanner src={banner_A} />
                         <div className="flex justify-between mt-2">
-                            <p className="text-sm font-semibold  text-[16px]">Iwan</p>
-                            <a href="#view" className="text-sm font-medium text-[#666666] text-[16px]">View →</a>
+                            <p className="font-semibold  text-[16px]">Iwan</p>
+                            <a href="#view" className=" font-medium text-[#666666] text-[16px]">View →</a>
                         </div>
                     </div>
                     <div className="relative">
                         <ImageBanner src={banner_B} />
                         <div className="flex justify-between mt-2">
-                            <p className="text-sm font-semibold text-[16px]">Sustenance</p>
-                            <a href="#view" className="text-sm font-medium text-[#666666] text-[16px]">View →</a>
+                            <p className="font-semibold text-[16px]">Sustenance</p>
+                            <a href="#view" className=" font-medium text-[#666666] text-[16px]">View →</a>
                         </div>
                     </div>
                     <div className="relative">
                         <ImageBanner src={banner_C} />
                         <div className="flex justify-between mt-2">
-                            <p className="text-sm font-semibold text-[16px]">ETS Contracts</p>
-                            <a href="#view" className="text-sm font-medium text-[#666666] text-[16px]">View →</a>
+                            <p className="font-semibold text-[16px]">ETS Contracts</p>
+                            <a href="#view" className="font-medium text-[#666666] text-[16px]">View →</a>
                         </div>
                     </div>
                 </div>
