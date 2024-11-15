@@ -8,8 +8,8 @@ import logo from '../assets/logo.png'
 
 export default function PortfolioLayout() {
     return (
-        <div className="grid lg:grid-cols-4 lg:w-[1200px] h-screen">
-            <div className="p-[30px] bg-white col-span-1 lg:overflow-y-auto lg:items-start items-center lg:w-[350px] w-[390px]   h-auto flex flex-col  justify-between">
+        <div className="grid lg:grid-cols-4 lg:w-[1288px] h-screen">
+            <div className="p-[30px] bg-white col-span-1 lg:overflow-y-auto lg:items-start items-center lg:w-[350px] w-screen  h-auto flex flex-col  justify-between">
                 <div className='space-y-[15px]'>
                     <h2 className="text-[24px] font-bold">"Make things easy for the people,..."</h2>
                     <p className="mt-4 text-[16px] text-[#666666] text-sm">
@@ -25,13 +25,13 @@ export default function PortfolioLayout() {
                         Sign up to be part of our journey.<br /> Get updates, behind-the-scenes peeks, and early access to our launch. Let’s create something amazing together.
                     </p>
                     <form class="space-y-[15px]">
-                        <div>
+                        {/* <div>
                             <input
                                 type="email"
                                 placeholder="Enter your Name"
                                 class="w-full px-4 py-2 border-t border-gray-100 border-b border-b-black focus:outline-none focus:bg-gray-100 placeholder-gray-500"
                             />
-                        </div>
+                        </div> */}
                         <div>
                        
                             <input
@@ -60,7 +60,7 @@ export default function PortfolioLayout() {
                     <img src={logo} alt="Basira Studio Logo" className="w-[204px] h-auto" />
                 </div>
             </div>
-            <div className="lg:overflow-y-auto flex flex-col items-center col-span-3  p-[30px]">
+            <div className="lg:overflow-y-auto no-scrollbar flex flex-col items-center col-span-3  p-[30px]">
                 <div className="space-y-[40px]">
                     <div className="relative">
                         <ImageBanner src={banner_A} />
